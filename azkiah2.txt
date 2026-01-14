@@ -1,0 +1,16 @@
+<form method="POST">
+    Tinggi: <input type="number" name="t">
+    Berat: <input type="number" name="b">
+    <button>Cek</button>
+</form>
+
+<?php
+$t = @$_POST['t'];
+$b = @$_POST['b'];
+
+if ($t - $b == 110) {
+    echo "Ideal";
+} else {
+    echo "Tidak Ideal";
+}
+?>

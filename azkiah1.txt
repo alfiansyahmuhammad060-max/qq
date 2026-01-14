@@ -1,0 +1,16 @@
+<form method="POST">
+    P: <input type="number" name="p">
+    L: <input type="number" name="l">
+    <button>Cek</button>
+</form>
+
+<?php
+$p = @$_POST['p'];
+$l = @$_POST['l'];
+
+if ($p == $l) {
+    echo "Bujur Sangkar";
+} else {
+    echo "Persegi Panjang";
+}
+?>

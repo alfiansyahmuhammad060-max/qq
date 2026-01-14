@@ -1,0 +1,16 @@
+<form method="POST">
+    MTK: <input type="number" name="m"><br>
+    Indo: <input type="number" name="i"><br>
+    Inggris: <input type="number" name="t"><br>
+    <button>Cek</button>
+</form>
+
+<?php
+$rata = (@$_POST['m'] + @$_POST['i'] + @$_POST['t']) / 3;
+
+if ($rata >= 70) {
+    echo "Lulus";
+} else {
+    echo "Tidak Lulus";
+}
+?>

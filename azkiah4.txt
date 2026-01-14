@@ -1,0 +1,17 @@
+<form method="POST">
+    Total: <input type="number" name="total">
+    <button>Hitung</button>
+</form>
+
+<?php
+$belanja = @$_POST['total'];
+
+if ($belanja >= 100000) {
+    $diskon = $belanja * 0.08;
+} else {
+    $diskon = $belanja * 0.05;
+}
+
+$bayar = $belanja - $diskon;
+echo "Bayar: $bayar";
+?>
